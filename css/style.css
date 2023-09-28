@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    color: rgb(100, 199, 241);
   }
   
   video {
@@ -11,4 +12,10 @@ body {
     transform: translateX(calc((100% - 100vw) / 2));
     z-index: -2;
   }
-  
+  h1 {
+    color: darkgoldenrod;
+  }
+
+  p {
+    color: rgb(231, 132, 96);
+  }
