@@ -7,11 +7,20 @@
     <title>Complejo Fioma</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="sonido.js" defer></script> <!-- Enlaza el archivo JavaScript -->
 </head>
 
 <body>
 
-    <video src="video/final.mp4" autoplay="true" muted="true" loop="true" poster="fotos/aerea1.png"></video>
+    <video src="video/final.mp4" autoplay muted loop poster="fotos/aerea1.png"></video>
+    <button id="toggleSound">
+        <div class="icon-container">
+            <img id="musicaOn" src="fotos/musicaon.png" alt="Icono de Sonido Activado">
+        </div>
+        <div class="icon-container">
+            <img id="musicaOff" src="fotos/musicaoff.png" alt="Icono de Sonido Desactivado">
+        </div>
+    </button>
 
     <h1>Este es el contenido de la página</h1>
     <p>El contenido de la página se mostrará por delante del vídeo</p>
@@ -52,17 +61,10 @@
         </div>
     </div>
 
-</body>
-
-<footer>
-
-    <p>©2023 Complejo Fiona</p>
-
-    <audio controls autoplay="true" loop="true">
-        <source src="audio/musica.mp3" type="audio/mpeg">
-        Tu navegador no es compatible con el audio de HTML 5
-    </audio>
-
+    <footer>
+        <p>©2023 Complejo Fiona</p>
     </footer>
+
+</body>
 
 </html>

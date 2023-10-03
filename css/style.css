@@ -22,6 +22,33 @@ p {
   color: rgb(231, 132, 96);
 }
 
+#toggleSound {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para los iconos y sus contenedores */
+.icon-container {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente */
+  padding: 5px; /* Espaciado interior para el icono */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+#musicaOn,
+#musicaOff {
+  width: 40px; /* Ajusta el tamaño de los iconos según tus preferencias */
+  height: 40px;
+  display: block; /* Asegura que ambos iconos se muestren con el mismo tamaño */
+  margin: 0 auto; /* Centra los iconos horizontalmente */
+}
+
+#musicaOff {
+  display: none; /* Oculta el icono de sonido desactivado al principio */
+}
+
+
 .section-container {
   display: flex;
   justify-content: space-between;
