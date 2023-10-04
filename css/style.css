@@ -15,11 +15,12 @@ video {
 }
 
 h1 {
-  color: darkgoldenrod;
+  color: rgb(11, 57, 184);
 }
 
 p {
   color: rgb(231, 132, 96);
+  
 }
 
 #toggleSound {
@@ -75,8 +76,8 @@ p {
 
 footer {
   background-color: rgba(0, 0, 0, 0.3);
-  text-align: center;
-  padding: 10px;
+  text-align: left;
+  padding: 68 px;
   position: absolute;
   bottom: 0;
   width: 100%;
