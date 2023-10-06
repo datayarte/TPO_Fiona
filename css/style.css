@@ -82,3 +82,34 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.campo-div {
+  margin-bottom: 10px;
+}
+
+
+label {
+  display: inline-block;
+  width: 150px; 
+  text-align: left; 
+}
+
+
+input{
+  width: 250px; 
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea{
+  text-align: left;
+}
+
+.submit {
+  display: inline-block;
+  width: 70px; 
+  padding: 5px;
+  
+
+}

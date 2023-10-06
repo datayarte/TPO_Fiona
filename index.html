@@ -9,6 +9,10 @@
     <link rel="icon" href="fotos/logo.png" type="image/png"><!-- Logo en la pestaña -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"><!-- Enlaza a las fuentes de google -->
     <script src="javascript/sonido.js" defer></script> <!-- Enlaza el archivo JavaScript -->
+  
+
+
+
 </head>
 
 <body>
@@ -34,7 +38,7 @@
     </nav>
 
     <a name="quienessomos"></a>
-    <div class="section-container">
+    <div id="quienes somos">
         <div class="section-box">
             <h2>Quienes somos</h2>
             <p>
@@ -42,8 +46,11 @@
                 <!-- Contenido de Quienes somos -->
             </p>
         </div>
+        </div>
+        <br>
+        <br>
 
-        <a name="reserva"></a>
+        <div id= "reserva"></a>
         <div class="section-box">
             <h2>Reserva</h2>
             <p>
@@ -51,31 +58,38 @@
                 <!-- Contenido de Reserva -->
             </p>
         </div>
+        </div>
 
+      
+    <div id="contacto">
+    
+      
         <a name="contacto"></a>
- <form action>
+        <div class="section-box">
+            <form action>
  
-        <div class="campo-div">
-      <label for="nombre">NOMBRE Y APELLIDO:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido" required><br><br>
-       </div>
-      <div class="campo-div">
-      <label for="email">CORREO ELECTRÓNICO:</label>
-      <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br><br>
-    </div>
+            <div class="campo-div">
+             <label for="nombre">NOMBRE Y APELLIDO:</label>
+             <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido" required><br><br>
+           </div>
+           <div class="campo-div">
+             <label for="email">CORREO ELECTRÓNICO:</label>
+             <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br><br>
+           </div>
 
-      <div class="campo-div">
-        <label for="numero">NÚMERO DE TELÉFONO:</label>
-        <input type="text" id="numero" name="numero" placeholder="Ingrese su numero" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-     </div>
-      <div class="campo-div">
-      <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..." required></textarea><br><br>
-      </div>
-      <div class="submit"></div>
-      <input type="submit" value="ENVIAR">
+           <div class="campo-div">
+             <label for="numero">NÚMERO DE TELÉFONO:</label>
+             <input type="text" id="numero" name="numero" placeholder="Ingrese su numero" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+           </div>
+           <div class="campo-div">
+             <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..." required></textarea><br><br>
+           </div>
+             <div class="submit"></div>
+             <input type="submit" value="ENVIAR">
   
-    </form>
-
+          </form>
+     </div>
+     </div>
 
 
         <div class="section-box">
@@ -86,7 +100,8 @@
             </p>
         </div>
     </div>
-
+<br>
+<br>
     <footer>
         <p>©2023 Complejo Fiona</p>
     </footer>
