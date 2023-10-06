@@ -23,8 +23,8 @@
         </div>
     </button>
 
-    <h1>Este es el contenido de la página</h1>
-    <p>El contenido de la página se mostrará por delante del vídeo</p>
+    <h1>Complejo Deportivo FIONA</h1>
+    <p>Un lugar para toda la familia</p>
 
     <nav>
         <a href="#">Inicio</a> <!-- index.html-->
@@ -53,6 +53,31 @@
         </div>
 
         <a name="contacto"></a>
+ <form action>
+ 
+        <div class="campo-div">
+      <label for="nombre">NOMBRE Y APELLIDO:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido" required><br><br>
+       </div>
+      <div class="campo-div">
+      <label for="email">CORREO ELECTRÓNICO:</label>
+      <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br><br>
+    </div>
+
+      <div class="campo-div">
+        <label for="numero">NÚMERO DE TELÉFONO:</label>
+        <input type="text" id="numero" name="numero" placeholder="Ingrese su numero" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+     </div>
+      <div class="campo-div">
+      <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..." required></textarea><br><br>
+      </div>
+      <div class="submit"></div>
+      <input type="submit" value="ENVIAR">
+  
+    </form>
+
+
+
         <div class="section-box">
             <h2>Contacto</h2>
             <p>
