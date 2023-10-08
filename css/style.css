@@ -1,3 +1,22 @@
+
+.container {
+    width: 100%; 
+   padding: 20px; 
+   background-color: black;
+}
+
+nav {
+   
+    color: #fff;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+}
+
 body {
   margin: 0;
   color: rgb(100, 241, 119);
@@ -39,10 +58,11 @@ p {
 
 #musicaOn,
 #musicaOff {
-  width: 40px; /* Ajusta el tamaño de los iconos según tus preferencias */
-  height: 40px;
+  width: 20px; /* Ajusta el tamaño de los iconos según tus preferencias */
+  height: 20px;
   display: block; /* Asegura que ambos iconos se muestren con el mismo tamaño */
   margin: 0 auto; /* Centra los iconos horizontalmente */
+ 
 }
 
 #musicaOff {
