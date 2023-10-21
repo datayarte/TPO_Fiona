@@ -8,30 +8,51 @@ document.addEventListener("DOMContentLoaded", function () {
         if (video.muted) {
             video.muted = false;
             musicaOnIcon.style.display = "inline";  // Muestra el icono de sonido activado
-            musicaOffIcon.style.display = "none";    // Oculta el icono de sonido desactivado
+            musicaOffIcon.style.display = "none";   // Oculta el icono de sonido desactivado
         } else {
             video.muted = true;
             musicaOnIcon.style.display = "none";     // Oculta el icono de sonido activado
             musicaOffIcon.style.display = "inline";  // Muestra el icono de sonido desactivado
         }
     });
+
+    let slideIndex = 0;
+
+    function showSlides() {
+        const slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Cambia la imagen cada 2 segundos
+    }
+
+    showSlides();
 });
 
-let slideIndex = 0;
+// Agregar el nuevo código JavaScript para el desplazamiento suave
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('nav a').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
 
-function showSlides() {
-    const slides = document.getElementsByClassName("mySlides");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
 
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
+            if (targetElement) {
+                const targetPosition = targetElement.offsetTop;
 
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 2000); // Cambia la imagen cada 2 segundos
-}
-
-showSlides();
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});

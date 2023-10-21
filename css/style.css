@@ -1,12 +1,11 @@
-
+/* Estilos para el contenedor y barra de navegación */
 .container {
-    width: 100%; 
-   padding: 20px; 
-   background-color: black;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
 }
 
 nav {
-   
     color: #fff;
     text-align: center;
 }
@@ -15,132 +14,121 @@ nav a {
     text-decoration: none;
     color: #fff;
     text-align: right;
+    scroll-behavior: smooth; /* Agrega desplazamiento suave a los enlaces del menú */
 }
 
+/* Estilos para el cuerpo de la página */
 body {
-  margin: 0;
-  color: rgb(100, 241, 119);
-  font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: rgb(100, 241, 119);
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* Estilos para el video de fondo */
 video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 105%;
-  min-height: 100%;
-  transform: translateX(calc((100% - 100vw) / 2));
-  z-index: -2;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
 }
 
+/* Estilos para el título principal y párrafos */
 h1 {
-  color: rgb(11, 57, 184);
+    color: rgb(11, 57, 184);
 }
 
 p {
-  color: rgb(231, 132, 96);
-  
+    color: rgb(231, 132, 96);
 }
 
+/* Estilos para el botón de alternar sonido */
 #toggleSound {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 /* Estilos para los iconos y sus contenedores */
 .icon-container {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente */
-  padding: 5px; /* Espaciado interior para el icono */
-  border-radius: 10px; /* Bordes redondeados */
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente */
+    padding: 5px; /* Espaciado interior para el icono */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 #musicaOn,
 #musicaOff {
-  width: 20px; /* Ajusta el tamaño de los iconos según tus preferencias */
-  height: 20px;
-  display: block; /* Asegura que ambos iconos se muestren con el mismo tamaño */
-  margin: 0 auto; /* Centra los iconos horizontalmente */
- 
+    width: 20px; /* Ajusta el tamaño de los iconos según tus preferencias */
+    height: 20px;
+    display: block; /* Asegura que ambos iconos se muestren con el mismo tamaño */
+    margin: 0 auto; /* Centra los iconos horizontalmente */
 }
 
 #musicaOff {
-  display: none; /* Oculta el icono de sonido desactivado al principio */
+    display: none; /* Oculta el icono de sonido desactivado al principio */
 }
 
-
+/* Estilos para contenedores de secciones y cajas de sección */
 .section-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
 }
 
 .section-box {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
 }
 
 .section-box h2 {
-  color: rgb(12, 146, 187);
-  font-family: 'Lilita One', cursive;
+    color: rgb(12, 146, 187);
+    font-family: 'Lilita One', cursive;
 }
 
 .section-box p {
-  color: rgb(252, 235, 1);
-  font-family: 'Open Sans', sans-serif;
+    color: rgb(252, 235, 1);
+    font-family: 'Open Sans', sans-serif;
 }
 
-
-  
-
-
-
-
-
+/* Estilos para campos de formulario y etiquetas de campo */
 .campo-div {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
-
 
 label {
-  display: inline-block;
-  width: 150px; 
-  text-align: left; 
+    display: inline-block;
+    width: 150px;
+    text-align: left;
 }
 
-
-input{
-  width: 250px; 
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+input {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-textarea{
-  text-align: left;
+textarea {
+    text-align: left;
 }
 
 .submit {
-  display: inline-block;
-  width: 70px; 
-  padding: 5px;
-  
-
+    display: inline-block;
+    width: 70px;
+    padding: 5px;
 }
 
-
-
-
+/* Estilos para el pie de página */
 footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  width: 100%;
-
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
 }
-
