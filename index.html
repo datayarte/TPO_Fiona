@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="css/style.css"><!-- Enlaza el archivo CSS -->
     <link rel="icon" href="fotos/logo.png" type="image/png"><!-- Logo en la pestaña -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- Enlaza a las fuentes de google -->
+    <!-- Enlaza a las fuentes de Google -->
     <script src="javascript/sonido.js" defer></script> <!-- Enlaza el archivo JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll-polyfill/0.4.4/smoothscroll.min.js"></script>
 </head>
-
 
 <body>
 
     <div class="container">
         <nav>
-
             <a href="#">Inicio</a>&nbsp;&nbsp;&nbsp;
-            <a href="#quienessomos">Quienes somos</a>&nbsp;&nbsp;&nbsp;
+            <a href="#quienesSomos">Quienes somos</a>&nbsp;&nbsp;&nbsp;
             <a href="#reserva">Reserva</a>&nbsp;&nbsp;&nbsp;
             <a href="#contacto">Contacto</a>&nbsp;&nbsp;&nbsp;
             <a href="#comollegar">Cómo llegar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -35,76 +33,140 @@
         </nav>
     </div>
 
-
-
-
     <video src="video/final.mp4" autoplay muted loop
         poster="fotos/aerea1.png"></video><!-- Enlaza el archivo de video -->
-
-
-
-
-
-
 
     <h1>Complejo Deportivo FIONA</h1>
     <p>Un lugar para toda la familia</p>
 
-    <div id="quienes somos">
-
+    <div id="quienesSomos">
         <h2>Quienes somos</h2>
-        <p>
-            Somos un grupo de amigos apasionados por el deporte, que hace tiempo decidimos abrir este complejo para que
-            todos aquellos que disfruten como nosotros del aire libre, el ejercicio físico y las reuniones con amigos y
-            familia, encuentren en él un espacio para llevarlo a cabo y a su vez sentirlo como propio.
-            <!-- Contenido de Quienes somos -->
-        </p>
-
-    </div>
-    <br><br><br><br><br><br><br><br><br><br>
-
-    <div id="reserva"></a>
-
-        <h2>Reserva</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit...
-            <!-- Contenido de Reserva -->
-        </p>
-
-    </div>
-    <br><br><br><br><br><br><br><br><br><br>
-
-    <div id="contacto">
-        <h2>Contacto</h2>
-
-        <a name="contacto"></a>
-
-        <form action>
-
-            <div class="campo-div">
-                <label for="nombre">NOMBRE Y APELLIDO:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido" required><br><br>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="content-container">
+                    <img src="fotos/1.jpg" alt="Imagen 1">
+                    <div class="text-container">
+                        <figcaption>
+                            Somos un grupo de amigos apasionados por el deporte, que hace tiempo decidimos abrir este
+                            complejo
+                            para que
+                            todos aquellos que disfruten como nosotros del aire libre, el ejercicio físico y las
+                            reuniones con
+                            amigos y
+                            familia, encuentren en él un espacio para llevarlo a cabo y a su vez sentirlo como propio.
+                        </figcaption>
+                    </div>
+                </div>
             </div>
-            <div class="campo-div">
-                <label for="email">CORREO ELECTRÓNICO:</label>
-                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico"
-                    required><br><br>
+            <div class="carousel-slide">
+                <div class="content-container">
+                    <img src="fotos/2.jpg" alt="Imagen 2">
+                    <div class="text-container">
+                        <figcaption>
+                            (Texto para la imagen 2)
+                        </figcaption>
+                    </div>
+                </div>
             </div>
+            <div class="carousel-slide">
+                <div class="content-container">
+                    <img src="fotos/3.jpg" alt="Imagen 3">
+                    <div class="text-container">
+                        <figcaption>
+                            (Texto para la imagen 3)
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="content-container">
+                    <img src="fotos/4.jpg" alt="Imagen 4">
+                    <div class="text-container">
+                        <figcaption>
+                            (Texto para la imagen 4)
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="content-container">
+                    <img src="fotos/5.jpg" alt="Imagen 5">
+                    <div class="text-container">
+                        <figcaption>
+                            (Texto para la imagen 5)
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="content-container">
+                    <img src="fotos/6.jpg" alt="Imagen 6">
+                    <div class="text-container">
+                        <figcaption>
+                            (Texto para la imagen 6)
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="content-container">
+                    <img src="fotos/7.jpg" alt="Imagen 7">
+                    <div class="text-container">
+                        <figcaption>
+                            (Texto para la imagen 7)
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <div class="campo-div">
-                <label for="numero">NÚMERO DE TELÉFONO:</label>
-                <input type="text" id="numero" name="numero" placeholder="Ingrese su numero"
-                    oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-            </div>
-            <div class="campo-div">
-                <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..."
-                    required></textarea><br><br>
-            </div>
-            <div class="submit"></div>
-            <input type="submit" value="ENVIAR">
 
-        </form>
-    </div>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <div id="reserva"></a>
+
+            <h2>Reserva</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                <!-- Contenido de Reserva -->
+            </p>
+
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <div id="contacto">
+            <h2>Contacto</h2>
+
+            <a name="contacto"></a>
+
+            <form action>
+
+                <div class="campo-div">
+                    <label for="nombre">NOMBRE Y APELLIDO:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido"
+                        required><br><br>
+                </div>
+                <div class="campo-div">
+                    <label for="email">CORREO ELECTRÓNICO:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico"
+                        required><br><br>
+                </div>
+
+                <div class="campo-div">
+                    <label for="numero">NÚMERO DE TELÉFONO:</label>
+                    <input type="text" id="numero" name="numero" placeholder="Ingrese su numero"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                </div>
+                <div class="campo-div">
+                    <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..."
+                        required></textarea><br><br>
+                </div>
+                <div class="submit"></div>
+                <input type="submit" value="ENVIAR">
+
+            </form>
+        </div>
     </div>
 
     <div id="comollegar"></div>

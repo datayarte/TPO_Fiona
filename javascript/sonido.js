@@ -3,12 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var toggleSoundButton = document.getElementById("toggleSound");
     var musicaOnIcon = document.getElementById("musicaOn");
     var musicaOffIcon = document.getElementById("musicaOff");
+    var slideIndex = 0;
 
     toggleSoundButton.addEventListener("click", function () {
         if (video.muted) {
             video.muted = false;
             musicaOnIcon.style.display = "inline";  // Muestra el icono de sonido activado
-            musicaOffIcon.style.display = "none";   // Oculta el icono de sonido desactivado
+            musicaOffIcon.style.display = "none";    // Oculta el icono de sonido desactivado
         } else {
             video.muted = true;
             musicaOnIcon.style.display = "none";     // Oculta el icono de sonido activado
@@ -16,10 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    let slideIndex = 0;
-
     function showSlides() {
-        const slides = document.getElementsByClassName("mySlides");
+        const slides = document.getElementsByClassName("carousel-slide");
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
@@ -30,29 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 2000); // Cambia la imagen cada 2 segundos
+        setTimeout(showSlides, 12000); // Cambia la imagen cada 12 segundos
     }
 
     showSlides();
-});
-
-// Agregar el nuevo código JavaScript para el desplazamiento suave
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('nav a').forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-                const targetPosition = targetElement.offsetTop;
-
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
 });
