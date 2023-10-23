@@ -229,90 +229,94 @@ figcaption {
   font-size: 45px;
 }
 
+/* ... Otros estilos ... */
+
+/* Estilos para el contenedor de voley y elementos */
 .voley {
-  display: flex;
-  justify-content: space-between;
-  width: 600px; /* Ancho de 600px */
-  height: 400px; /* Alto de 400px */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background-color: rgb(3, 158, 3); /* Cambia el color de fondo a verde pasto o el que prefieras */
+  background-color: rgba(3, 86, 158, 0.683);
 }
 
 .element {
-  width: 50px; /* Ajusta el tamaño de los elementos según tus preferencias */
-  height: 50px; /* Ajusta el tamaño de los elementos según tus preferencias */
-  animation: movePlayer 4s linear infinite; /* Jugadores se mueven en bucle infinito */
+  width: 50px;
+  height: 50px;
+  position: absolute;
 }
 
-
 #jugador1 {
-  animation: movePlayer1 4s linear infinite; /* Jugador 1: de izquierda a derecha en 4 segundos */
+  animation: movePlayer1 8s linear infinite;
   left: 0;
+  top: 0;
 }
 
 #jugador2 {
-  animation: movePlayer2 4s linear infinite; /* Jugador 2: de derecha a izquierda en 4 segundos */
-  left: 0; /* Cambia a 'right' para mover hacia la derecha */
+  animation: movePlayer2 7s linear infinite;
+  left: 0;
+  top: 0;
 }
 
 #pelota {
-  animation: moveBall 2s linear infinite; /* Pelota: de izquierda a derecha en 2 segundos */
+  animation: moveBall 4s linear infinite;
   left: 0;
-  top: 50%;
+  top: 60px;
   transform: translate(0, -50%);
 }
 
 #red {
-  animation: moveNet 5s linear infinite; /* Red: movimiento horizontal de 10px en 5 segundos */
-  left: 195px;
-  top: 50%;
+  animation: moveNet 3s linear infinite;
+  left: 295px;
+  top: 15%;
   transform: translate(-50%, -50%);
 }
 
-
 @keyframes movePlayer1 {
   0% {
-    left: -50px; /* Posición inicial fuera del contenedor */
+    left: -90px; /* Posición inicial fuera del contenedor */
   }
   50% {
-    left: 600px; /* Mueve al centro */
+    left: 140px; /* Mueve al centro */
   }
   100% {
-    left: -50px; /* Vuelve a la posición inicial */
+    left: -90px; /* Vuelve a la posición inicial */
   }
 }
 
 @keyframes movePlayer2 {
   0% {
-    left: -50px; /* Posición inicial fuera del contenedor */
+    left: 450px; /* Posición inicial fuera del contenedor */
   }
   50% {
-    left: 600px; /* Mueve al centro */
+    left: 250px; /* Mueve al centro */
   }
   100% {
-    left: -50px; /* Vuelve a la posición inicial */
+    left: 450px; /* Vuelve a la posición inicial */
   }
 }
 
 @keyframes moveBall {
   0% {
-      left: -50px; /* Posición inicial fuera del contenedor */
+    left: 255px; /* Posición inicial fuera del contenedor */
+  }
+  50% {
+    left: 330px; /* Llega al centro y se detiene */
   }
   100% {
-      left: 195px; /* Llega al centro y se detiene */
+    left: 255px; /* Llega al centro y se detiene */
   }
 }
 
 @keyframes moveNet {
   0% {
-      left: 195px; /* Posición inicial centrada horizontalmente */
+    left: 240px; /* Posición inicial centrada horizontalmente */
   }
   50% {
-      left: 205px; /* Se mueve 10px a la derecha */
+    left: 270px; /* Se mueve 10px a la derecha */
   }
   100% {
-      left: 195px; /* Vuelve al centro */
+    left: 240px; /* Vuelve al centro */
   }
 }
