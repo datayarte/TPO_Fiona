@@ -1,5 +1,6 @@
 /* Estilos para el contenedor y barra de navegación */
 .container {
+  z-index: 100;
   top: 0;
   left: 0;
   position: fixed;
