@@ -45,6 +45,7 @@ h1 {
   font-size: 55px;
   font-family: 'Bungee Spice', sans-serif;  transition: transform 0.3s; /* Agrega una transición de 0.3 segundos a la transformación */
   text-align: center; /* Alinea el texto al centro */
+  margin: 100px 0;
 }
 
 h1:hover {
