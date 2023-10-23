@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Estilos para el contenedor y barra de navegación */
 .container {
   z-index: 100;
