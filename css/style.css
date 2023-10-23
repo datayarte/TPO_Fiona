@@ -329,3 +329,9 @@ figcaption {
     left: 240px; /* Vuelve al centro */
   }
 }
+
+
+iframe {
+  margin: 0 auto; 
+  display: block;
+}

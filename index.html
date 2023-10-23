@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Enlaza a las fuentes de Google -->
     <script src="javascript/sonido.js" defer></script> <!-- Enlaza el archivo JavaScript -->
-    <script src="javascript/validarform.js"></script> <!-- Enlaza el archivo JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll-polyfill/0.4.4/smoothscroll.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
@@ -150,7 +149,7 @@
 
             <h2>Reserva</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                Por reservas
                 <!-- Contenido de Reserva -->
             </p>
 
@@ -162,23 +161,27 @@
 
             <a name="contacto"></a>
 
-            <form id="formulario_contacto" action>
+            <form action>
 
                 <div class="campo-div">
                     <label for="nombre">NOMBRE Y APELLIDO:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido">
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido"
+                        required><br><br>
                 </div>
                 <div class="campo-div">
                     <label for="email">CORREO ELECTRÓNICO:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico"
+                        required><br><br>
                 </div>
 
                 <div class="campo-div">
                     <label for="numero">NÚMERO DE TELÉFONO:</label>
-                    <input type="text" id="numero" name="numero" placeholder="Ingrese su numero">
+                    <input type="text" id="numero" name="numero" placeholder="Ingrese su numero"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                 </div>
                 <div class="campo-div">
-                    <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..."></textarea>
+                    <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..."
+                        required></textarea><br><br>
                 </div>
                 <div class="submit"></div>
                 <input type="submit" value="ENVIAR">
@@ -189,6 +192,7 @@
    <br><br><br><br>
     <div id="comollegar"></div>
     <h2>Como llegar</h2>
+    <p> Dale click para acceder fácil y rápidamente a nuestra a nuestra geolocalización. </p>
     <a name="comollegar"></a>
 <br><br><br><br>
     <iframe
