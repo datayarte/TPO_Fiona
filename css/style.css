@@ -1,5 +1,8 @@
 /* Estilos para el contenedor y barra de navegación */
 .container {
+  top: 0;
+  left: 0;
+  position: fixed;
   width: 100%;
   padding: 20px;
   background-color: black;
