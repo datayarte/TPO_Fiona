@@ -66,7 +66,7 @@ h3 {
   font-size: 30px;
   font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
   text-align: left; /* Alinea el texto a la izquierda */
-  background-color: rgba(65, 2, 2, 0.392); /* Color de fondo burdeos con 70% de transparencia */
+  background-color: rgba(65, 2, 2, 0.622); /* Color de fondo burdeos con 70% de transparencia */
   padding: 10px; /* Agrega un espacio alrededor del texto */
   border-radius: 15px; /* Bordes redondeados */
   display: inline-block; /* Para que el fondo se ajuste al contenido */
@@ -79,7 +79,7 @@ h4 {
   font-size: 30px;
   font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
   text-align: left; /* Alinea el texto a la izquierda */
-  background-color: rgba(65, 2, 2, 0.392); /* Color de fondo burdeos con 70% de transparencia */
+  background-color: rgba(65, 2, 2, 0.474); /* Color de fondo burdeos con 70% de transparencia */
   padding: 10px; /* Agrega un espacio alrededor del texto */
   border-radius: 15px; /* Bordes redondeados */
   display: inline-block; /* Para que el fondo se ajuste al contenido */
@@ -226,4 +226,85 @@ figcaption {
   margin-left: 30px; /* Agrega un margen a la izquierda del envoltorio del texto */
   font-family: 'Exo 2', sans-serif;
   font-size: 45px;
+}
+
+.voley {
+  width: 400px; /* Ajusta el tamaño del contenedor según tus necesidades */
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #000; /* Borde para el contenedor */
+}
+
+.element {
+  position: absolute;
+}
+
+#jugador1 {
+  animation: movePlayer1 4s linear infinite; /* Jugador 1: de izquierda a derecha en 4 segundos */
+  left: 0;
+}
+
+#jugador2 {
+  animation: movePlayer2 4s linear infinite; /* Jugador 2: de derecha a izquierda en 4 segundos */
+  right: 0;
+}
+
+#pelota {
+  animation: moveBall 2s linear infinite; /* Pelota: de izquierda a derecha en 2 segundos */
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%); /* Centra verticalmente */
+}
+
+#red {
+  animation: moveNet 5s linear infinite; /* Red: movimiento horizontal de 10px en 5 segundos */
+  left: 195px; /* Posición inicial centrada horizontalmente */
+  top: 50%;
+  transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+}
+
+@keyframes movePlayer1 {
+  0% {
+      left: 0;
+  }
+  50% {
+      left: 195px; /* Mueve al centro */
+  }
+  100% {
+      left: 0; /* Vuelve a la posición inicial */
+  }
+}
+
+@keyframes movePlayer2 {
+  0% {
+      right: 0;
+  }
+  50% {
+      right: 195px; /* Mueve al centro */
+  }
+  100% {
+      right: 0; /* Vuelve a la posición inicial */
+  }
+}
+
+@keyframes moveBall {
+  0% {
+      left: 0;
+  }
+  100% {
+      left: 195px; /* Llega al centro y se detiene */
+  }
+}
+
+@keyframes moveNet {
+  0% {
+      left: 195px;
+  }
+  50% {
+      left: 205px; /* Se mueve 10px a la derecha */
+  }
+  100% {
+      left: 195px; /* Vuelve al centro */
+  }
 }
