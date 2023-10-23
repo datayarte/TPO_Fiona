@@ -101,10 +101,11 @@ p {
 
 /* Estilos para el cuerpo de la página */
 body {
-  margin: 0;
+  background-color: rgb(3, 158, 3); /* Cambia el color de fondo a verde pasto o el que prefieras */
+  margin: 0; /* Asegura que no haya margen en el cuerpo */
   color: rgb(100, 241, 119);
-  font-family: 'Open Sans', sans-serif;
-}
+  font-family: 'Open Sans', sans-serif; 
+} 
 
 
 /* Estilos para los iconos y sus contenedores */
@@ -229,16 +230,22 @@ figcaption {
 }
 
 .voley {
-  width: 400px; /* Ajusta el tamaño del contenedor según tus necesidades */
-  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  width: 600px; /* Ancho de 600px */
+  height: 400px; /* Alto de 400px */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
   position: relative;
   overflow: hidden;
-  border: 2px solid #000; /* Borde para el contenedor */
+  background-color: rgb(3, 158, 3); /* Cambia el color de fondo a verde pasto o el que prefieras */
 }
 
 .element {
-  position: absolute;
+  width: 50px; /* Ajusta el tamaño de los elementos según tus preferencias */
+  height: 50px; /* Ajusta el tamaño de los elementos según tus preferencias */
+  animation: movePlayer 4s linear infinite; /* Jugadores se mueven en bucle infinito */
 }
+
 
 #jugador1 {
   animation: movePlayer1 4s linear infinite; /* Jugador 1: de izquierda a derecha en 4 segundos */
@@ -247,50 +254,51 @@ figcaption {
 
 #jugador2 {
   animation: movePlayer2 4s linear infinite; /* Jugador 2: de derecha a izquierda en 4 segundos */
-  right: 0;
+  left: 0; /* Cambia a 'right' para mover hacia la derecha */
 }
 
 #pelota {
   animation: moveBall 2s linear infinite; /* Pelota: de izquierda a derecha en 2 segundos */
   left: 0;
   top: 50%;
-  transform: translate(0, -50%); /* Centra verticalmente */
+  transform: translate(0, -50%);
 }
 
 #red {
   animation: moveNet 5s linear infinite; /* Red: movimiento horizontal de 10px en 5 segundos */
-  left: 195px; /* Posición inicial centrada horizontalmente */
+  left: 195px;
   top: 50%;
-  transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+  transform: translate(-50%, -50%);
 }
+
 
 @keyframes movePlayer1 {
   0% {
-      left: 0;
+    left: -50px; /* Posición inicial fuera del contenedor */
   }
   50% {
-      left: 195px; /* Mueve al centro */
+    left: 600px; /* Mueve al centro */
   }
   100% {
-      left: 0; /* Vuelve a la posición inicial */
+    left: -50px; /* Vuelve a la posición inicial */
   }
 }
 
 @keyframes movePlayer2 {
   0% {
-      right: 0;
+    left: -50px; /* Posición inicial fuera del contenedor */
   }
   50% {
-      right: 195px; /* Mueve al centro */
+    left: 600px; /* Mueve al centro */
   }
   100% {
-      right: 0; /* Vuelve a la posición inicial */
+    left: -50px; /* Vuelve a la posición inicial */
   }
 }
 
 @keyframes moveBall {
   0% {
-      left: 0;
+      left: -50px; /* Posición inicial fuera del contenedor */
   }
   100% {
       left: 195px; /* Llega al centro y se detiene */
@@ -299,7 +307,7 @@ figcaption {
 
 @keyframes moveNet {
   0% {
-      left: 195px;
+      left: 195px; /* Posición inicial centrada horizontalmente */
   }
   50% {
       left: 205px; /* Se mueve 10px a la derecha */
