@@ -7,7 +7,7 @@
 
 nav {
   color: #fff;
-  text-align: center;
+    text-align: center;
 }
 
 nav a {
@@ -15,13 +15,15 @@ nav a {
   color: #fff;
   text-align: right;
   scroll-behavior: smooth; /* Agrega desplazamiento suave a los enlaces del menú */
+  transition: color 0.3s; /* Agrega una transición de 0.3 segundos al cambio de color */
+  transition: transform 0.3s; /* Agrega una transición de 0.3 segundos a la transformación */
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
 }
 
-/* Estilos para el cuerpo de la página */
-body {
-  margin: 0;
-  color: rgb(100, 241, 119);
-  font-family: 'Open Sans', sans-serif;
+nav a:hover {
+  color: #1e8ef0; /* Cambia el color al pasar el mouse (ajusta el color según tus preferencias) */
+  transform: translateX(6px); /* Mueve el título Horizontalmente al pasar el mouse (ajusta la cantidad de desplazamiento según tus preferencias) */
 }
 
 /* Estilos para el video de fondo */
@@ -35,9 +37,54 @@ video {
   z-index: -2;
 }
 
-/* Estilos para el título principal y párrafos */
 h1 {
-  color: rgb(11, 57, 184);
+  /*color: rgb(11, 229, 237);*/
+  font-size: 55px;
+  font-family: 'Bungee Spice', sans-serif;  transition: transform 0.3s; /* Agrega una transición de 0.3 segundos a la transformación */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+h1:hover {
+  transform: translateX(10px); /* Mueve el título horizontalmente al pasar el mouse (ajusta la cantidad de desplazamiento según tus preferencias) */
+}
+
+h2 {
+  color: rgb(204, 255, 1);
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  background-color: rgba(65, 2, 2, 0.392); /* Color de fondo burdeos con 70% de transparencia */
+  padding: 10px; /* Agrega un espacio alrededor del texto */
+  border-radius: 15px; /* Bordes redondeados */
+  display: inline-block; /* Para que el fondo se ajuste al contenido */
+  margin: 10px 0; /* Añade un margen superior e inferior para separar los títulos */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+h3 {
+  color: rgb(45, 137, 241);
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  background-color: rgba(65, 2, 2, 0.392); /* Color de fondo burdeos con 70% de transparencia */
+  padding: 10px; /* Agrega un espacio alrededor del texto */
+  border-radius: 15px; /* Bordes redondeados */
+  display: inline-block; /* Para que el fondo se ajuste al contenido */
+  margin: 10px 0; /* Añade un margen superior e inferior para separar los títulos */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+h4 {
+  color: rgb(204, 255, 1);
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  background-color: rgba(65, 2, 2, 0.392); /* Color de fondo burdeos con 70% de transparencia */
+  padding: 10px; /* Agrega un espacio alrededor del texto */
+  border-radius: 15px; /* Bordes redondeados */
+  display: inline-block; /* Para que el fondo se ajuste al contenido */
+  margin: 10px 0; /* Añade un margen superior e inferior para separar los títulos */
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
 p {
@@ -51,6 +98,14 @@ p {
   border: none;
   cursor: pointer;
 }
+
+/* Estilos para el cuerpo de la página */
+body {
+  margin: 0;
+  color: rgb(100, 241, 119);
+  font-family: 'Open Sans', sans-serif;
+}
+
 
 /* Estilos para los iconos y sus contenedores */
 .icon-container {
@@ -170,5 +225,5 @@ figcaption {
   border-radius: 10px; /* Bordes redondeados */
   margin-left: 30px; /* Agrega un margen a la izquierda del envoltorio del texto */
   font-family: 'Exo 2', sans-serif;
-  font-size: 30px;
+  font-size: 45px;
 }

@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 12000); // Cambia la imagen cada 12 segundos
+        setTimeout(showSlides, 7000); // Cambia la imagen cada 7 segundos
     }
 
     showSlides();
