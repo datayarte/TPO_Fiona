@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById("email").value;
         const numero = document.getElementById("numero").value;
 
-        if (nombre.trim() === "") {
+        if (nombre.trim() === "A") {
             alert("Por favor, ingrese su nombre y apellido.");
             event.preventDefault();
         } else if (email.trim() === "") {

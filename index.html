@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Enlaza a las fuentes de Google -->
     <script src="javascript/sonido.js" defer></script> <!-- Enlaza el archivo JavaScript -->
+    <script src="javascript/validarform.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll-polyfill/0.4.4/smoothscroll.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
@@ -161,27 +162,23 @@
 
             <a name="contacto"></a>
 
-            <form action>
+            <form class="miFormulario" action>
 
                 <div class="campo-div">
                     <label for="nombre">NOMBRE Y APELLIDO:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido"
-                        required><br><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido">
                 </div>
                 <div class="campo-div">
                     <label for="email">CORREO ELECTRÓNICO:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico"
-                        required><br><br>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
                 </div>
 
                 <div class="campo-div">
                     <label for="numero">NÚMERO DE TELÉFONO:</label>
-                    <input type="text" id="numero" name="numero" placeholder="Ingrese su numero"
-                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    <input type="text" id="numero" name="numero" placeholder="Ingrese su numero">
                 </div>
                 <div class="campo-div">
-                    <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..."
-                        required></textarea><br><br>
+                    <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..."></textarea>
                 </div>
                 <div class="submit"></div>
                 <input type="submit" value="ENVIAR">
@@ -205,7 +202,7 @@
 </body>
 <DIV>
     <footer>
-        <p>©2023 Complejo Fiona</p>
+        ©2023 Complejo Fiona
     </footer>
 
 </DIV>
