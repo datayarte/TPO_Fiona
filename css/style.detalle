@@ -1,0 +1,338 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos para el contenedor y barra de navegación */
+.container {
+  z-index: 100;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+}
+
+nav {
+  color: #fff;
+    text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  text-align: right;
+  scroll-behavior: smooth; /* Agrega desplazamiento suave a los enlaces del menú */
+  transition: color 0.3s; /* Agrega una transición de 0.3 segundos al cambio de color */
+  transition: transform 0.3s; /* Agrega una transición de 0.3 segundos a la transformación */
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #1e8ef0; /* Cambia el color al pasar el mouse (ajusta el color según tus preferencias) */
+  transform: translateX(6px); /* Mueve el título Horizontalmente al pasar el mouse (ajusta la cantidad de desplazamiento según tus preferencias) */
+}
+
+/* Estilos para el video de fondo */
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+
+h1 {
+  /*color: rgb(11, 229, 237);*/
+  font-size: 55px;
+  font-family: 'Bungee Spice', sans-serif;  transition: transform 0.3s; /* Agrega una transición de 0.3 segundos a la transformación */
+  text-align: center; /* Alinea el texto al centro */
+  margin: 100px 0;
+}
+
+h1:hover {
+  transform: translateX(10px); /* Mueve el título horizontalmente al pasar el mouse (ajusta la cantidad de desplazamiento según tus preferencias) */
+}
+
+h2 {
+  color: rgb(204, 255, 1);
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  /* background-color: black;  Color de fondo burdeos con 70% de transparencia */
+  padding: 10px; /* Agrega un espacio alrededor del texto */
+  border-radius: 15px; /* Bordes redondeados */
+  display: inline-block; /* Para que el fondo se ajuste al contenido */
+  margin: 10px 0; /* Añade un margen superior e inferior para separar los títulos */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+h3 {
+  color: rgb(45, 137, 241);
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  /*background-color: black;  Color de fondo burdeos con 70% de transparencia */
+  padding: 10px; /* Agrega un espacio alrededor del texto */
+  border-radius: 15px; /* Bordes redondeados */
+  display: inline-block; /* Para que el fondo se ajuste al contenido */
+  margin: 10px 0; /* Añade un margen superior e inferior para separar los títulos */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+h4 {
+  color: rgb(204, 255, 1);
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  /*background-color: black;  Color de fondo burdeos con 70% de transparencia */
+  padding: 10px; /* Agrega un espacio alrededor del texto */
+  border-radius: 15px; /* Bordes redondeados */
+  display: inline-block; /* Para que el fondo se ajuste al contenido */
+  margin: 10px 0; /* Añade un margen superior e inferior para separar los títulos */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+p {
+  color: rgb(231, 132, 96);
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para el botón de alternar sonido */
+#toggleSound {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  background-color: rgb(3, 158, 3); /* Cambia el color de fondo a verde pasto o el que prefieras */
+  margin: 0; /* Asegura que no haya margen en el cuerpo */
+  color: rgb(100, 241, 119);
+  font-family: 'Open Sans', sans-serif; 
+} 
+
+
+/* Estilos para los iconos y sus contenedores */
+.icon-container {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente */
+  padding: 5px; /* Espaciado interior para el icono */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+#musicaOn,
+#musicaOff {
+  width: 20px; /* Ajusta el tamaño de los iconos según tus preferencias */
+  height: 20px;
+  display: block; /* Asegura que ambos iconos se muestren con el mismo tamaño */
+  margin: 0 auto; /* Centra los iconos horizontalmente */
+}
+
+#musicaOff {
+  display: none; /* Oculta el icono de sonido desactivado al principio */
+}
+
+/* Estilos para contenedores de secciones y cajas de sección */
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.section-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.section-box h2 {
+  color: rgb(12, 146, 187);
+  font-family: 'Lilita One', cursive;
+}
+
+.section-box p {
+  color: rgb(252, 235, 1);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos para campos de formulario y etiquetas de campo */
+.campo-div {
+  margin-bottom: 5px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+input {
+  width: 250px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  text-align: left;
+}
+
+.submit {
+  display: inline-block;
+  width: 70px;
+  padding: 5px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Estilos para el carrusel y el texto "Quienes somos" */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-slide {
+  flex: 1;
+  animation: fade 12s infinite; /* Cambio de imagen con desvanecimiento cada 12 segundos (ajusta según tus preferencias) */
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row; /* Alinea la imagen y el texto en una fila */
+  align-items: center;
+}
+
+.content-container img {
+  max-width: 50%; /* Ajusta el ancho de la imagen según tus preferencias */
+  height: auto;
+}
+
+
+figcaption {
+  flex: 1;
+  text-align: center; /* Alinea el texto al centro */
+  background-color: black; /* Fondo translúcido con 70% de opacidad */
+  padding: 10px; /* Añade espacio alrededor del texto */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-left: 30px; /* Agrega un margen a la izquierda del envoltorio del texto */
+  font-family: 'Exo 2', sans-serif;
+  font-size: 45px;
+}
+
+/* ... Otros estilos ... */
+
+/* Estilos para el contenedor de voley y elementos */
+.voley {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(3, 86, 158, 0.683);
+}
+
+.element {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+#jugador1 {
+  animation: movePlayer1 8s linear infinite;
+  left: 0;
+  top: 0;
+}
+
+#jugador2 {
+  animation: movePlayer2 7s linear infinite;
+  left: 0;
+  top: 0;
+}
+
+#pelota {
+  animation: moveBall 4s linear infinite;
+  left: 0;
+  top: 60px;
+  transform: translate(0, -50%);
+}
+
+#red {
+  animation: moveNet 3s linear infinite;
+  left: 295px;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes movePlayer1 {
+  0% {
+    left: -90px; /* Posición inicial fuera del contenedor */
+  }
+  50% {
+    left: 140px; /* Mueve al centro */
+  }
+  100% {
+    left: -90px; /* Vuelve a la posición inicial */
+  }
+}
+
+@keyframes movePlayer2 {
+  0% {
+    left: 450px; /* Posición inicial fuera del contenedor */
+  }
+  50% {
+    left: 250px; /* Mueve al centro */
+  }
+  100% {
+    left: 450px; /* Vuelve a la posición inicial */
+  }
+}
+
+@keyframes moveBall {
+  0% {
+    left: 255px; /* Posición inicial fuera del contenedor */
+  }
+  50% {
+    left: 330px; /* Llega al centro y se detiene */
+  }
+  100% {
+    left: 255px; /* Llega al centro y se detiene */
+  }
+}
+
+@keyframes moveNet {
+  0% {
+    left: 240px; /* Posición inicial centrada horizontalmente */
+  }
+  50% {
+    left: 270px; /* Se mueve 10px a la derecha */
+  }
+  100% {
+    left: 240px; /* Vuelve al centro */
+  }
+}
+
+
+iframe {
+  margin: 0 auto; 
+  display: block;
+}
