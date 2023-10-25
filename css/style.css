@@ -62,7 +62,7 @@ h2 {
   font-size: 30px;
   font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
   text-align: left; /* Alinea el texto a la izquierda */
-  background-color: rgba(65, 2, 2, 0.392); /* Color de fondo burdeos con 70% de transparencia */
+  /* background-color: black;  Color de fondo burdeos con 70% de transparencia */
   padding: 10px; /* Agrega un espacio alrededor del texto */
   border-radius: 15px; /* Bordes redondeados */
   display: inline-block; /* Para que el fondo se ajuste al contenido */
@@ -71,16 +71,16 @@ h2 {
 }
 
 h3 {
-  color: rgb(45, 137, 241);
+  color: rgb(237, 97, 9);
   font-size: 30px;
   font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
-  text-align: left; /* Alinea el texto a la izquierda */
-  background-color: rgba(65, 2, 2, 0.622); /* Color de fondo burdeos con 70% de transparencia */
+ text-align: center;
+  /*background-color: black;  Color de fondo burdeos con 70% de transparencia */
   padding: 10px; /* Agrega un espacio alrededor del texto */
   border-radius: 15px; /* Bordes redondeados */
   display: inline-block; /* Para que el fondo se ajuste al contenido */
   margin: 10px 0; /* Añade un margen superior e inferior para separar los títulos */
-  text-align: left; /* Alinea el texto a la izquierda */
+ 
 }
 
 h4 {
@@ -88,7 +88,7 @@ h4 {
   font-size: 30px;
   font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
   text-align: left; /* Alinea el texto a la izquierda */
-  background-color: rgba(65, 2, 2, 0.474); /* Color de fondo burdeos con 70% de transparencia */
+  /*background-color: black;  Color de fondo burdeos con 70% de transparencia */
   padding: 10px; /* Agrega un espacio alrededor del texto */
   border-radius: 15px; /* Bordes redondeados */
   display: inline-block; /* Para que el fondo se ajuste al contenido */
@@ -96,10 +96,7 @@ h4 {
   text-align: left; /* Alinea el texto a la izquierda */
 }
 
-p {
-  color: rgb(231, 132, 96);
-  text-align: left; /* Alinea el texto a la izquierda */
-}
+
 
 /* Estilos para el botón de alternar sonido */
 #toggleSound {
@@ -110,7 +107,7 @@ p {
 
 /* Estilos para el cuerpo de la página */
 body {
-  background-color: rgb(3, 158, 3); /* Cambia el color de fondo a verde pasto o el que prefieras */
+  background-color: rgb(43, 47, 43); /* Cambia el color de fondo a verde pasto o el que prefieras */
   margin: 0; /* Asegura que no haya margen en el cuerpo */
   color: rgb(100, 241, 119);
   font-family: 'Open Sans', sans-serif; 
@@ -204,11 +201,18 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto; 
+  
+
+
+
+
+  
 }
 
 .carousel-slide {
   flex: 1;
-  animation: fade 12s infinite; /* Cambio de imagen con desvanecimiento cada 12 segundos (ajusta según tus preferencias) */
+  animation: fade 6s infinite; /* Cambio de imagen con desvanecimiento cada 12 segundos (ajusta según tus preferencias) */
 }
 
 @keyframes fade {
@@ -227,17 +231,22 @@ footer {
   height: auto;
 }
 
-figcaption {
+
+.texto {
+    font-size: 18px; 
+    color: #333
+}
+/*
   flex: 1;
-  text-align: center; /* Alinea el texto al centro */
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo translúcido con 70% de opacidad */
-  padding: 10px; /* Añade espacio alrededor del texto */
-  border-radius: 10px; /* Bordes redondeados */
-  margin-left: 30px; /* Agrega un margen a la izquierda del envoltorio del texto */
+  text-align: center; 
+  background-color: black;
+  padding: 10px; 
+  border-radius: 10px; 
+  margin-left: 30px; 
   font-family: 'Exo 2', sans-serif;
   font-size: 45px;
 }
-
+*/
 /* ... Otros estilos ... */
 
 /* Estilos para el contenedor de voley y elementos */
@@ -334,4 +343,8 @@ figcaption {
 iframe {
   margin: 0 auto; 
   display: block;
+}
+
+.miFormulario {
+  text-align: center;
 }
