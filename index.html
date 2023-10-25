@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Enlaza a las fuentes de Google -->
     <script src="javascript/sonido.js" defer></script> <!-- Enlaza el archivo JavaScript -->
-    <script src="javascript/validarform.js" ></script>
+    <script src="javascript/validarform.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll-polyfill/0.4.4/smoothscroll.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
@@ -39,6 +39,9 @@
 
     <video src="video/final.mp4" autoplay muted loop
         poster="fotos/aerea1.png"></video><!-- Enlaza el archivo de video -->
+        <div id="fondoDePagina">
+            
+        </div>
 
     <h1>Complejo Deportivo FIONA</h1>
 
@@ -57,158 +60,161 @@
         </div>
     </div>
 
-    <div id="quienesSomos">
-        <h2>Quienes somos</h2>
-        <h3>Somos un grupo de amigos apasionados por el deporte, que hace tiempo decidimos abrir este
-            complejo
-            para que
-            todos aquellos que disfruten como nosotros del aire libre, el ejercicio físico y las
-            reuniones con
-            amigos y
-            familia, encuentren en él un espacio para llevarlo a cabo y a su vez sentirlo como propio.
-        </h3>
-        <h4>Nuestras instalaciones cuentan con:</h4>
+    <div id="fondoDePagina">
 
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <div class="content-container">
-                    <img src="fotos/1.jpg" alt="Imagen 1">
-                    <div class="text-container">
-                        <figcaption>
-                            2 Canchas de Paddle con acrilico y techadas
-                        </figcaption>
+        <div id="quienesSomos">
+            <h2>Quienes somos</h2>
+            <h3>Somos un grupo de amigos apasionados por el deporte, que hace tiempo decidimos abrir este
+                complejo
+                para que
+                todos aquellos que disfruten como nosotros del aire libre, el ejercicio físico y las
+                reuniones con
+                amigos y
+                familia, encuentren en él un espacio para llevarlo a cabo y a su vez sentirlo como propio.
+            </h3>
+            <h4>Nuestras instalaciones cuentan con:</h4>
+
+
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="content-container">
+                        <img src="fotos/1.jpg" alt="Imagen 1">
+                        <div class="text-container">
+                            <figcaption>
+                                2 Canchas de Paddle con acrilico y techadas
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="content-container">
+                        <img src="fotos/2.jpg" alt="Imagen 2">
+                        <div class="text-container">
+                            <figcaption>
+                                2 Canchas de Paddle de cemento
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="content-container">
+                        <img src="fotos/3.jpg" alt="Imagen 3">
+                        <div class="text-container">
+                            <figcaption>
+                                4 canchas de tenis
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="content-container">
+                        <img src="fotos/4.jpg" alt="Imagen 4">
+                        <div class="text-container">
+                            <figcaption>
+                                Alquiler de elementos deportivos (Pelotas, Raquetas, etc.)
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="content-container">
+                        <img src="fotos/5.jpg" alt="Imagen 5">
+                        <div class="text-container">
+                            <figcaption>
+                                3 cancha de futbol 7 y 5 canchas de futbol 5
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="content-container">
+                        <img src="fotos/6.jpg" alt="Imagen 6">
+                        <div class="text-container">
+                            <figcaption>
+                                Estacionamiento, Vestuarios, Sector de descanso y buffet con parrila
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="content-container">
+                        <img src="fotos/7.jpg" alt="Imagen 7">
+                        <div class="text-container">
+                            <figcaption>
+                                2 canchas de Voley
+                            </figcaption>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-slide">
-                <div class="content-container">
-                    <img src="fotos/2.jpg" alt="Imagen 2">
-                    <div class="text-container">
-                        <figcaption>
-                            2 Canchas de Paddle de cemento
-                        </figcaption>
-                    </div>
-                </div>
+
+
+
+            <br><br><br><br><br><br><br><br><br><br>
+
+            <div id="reserva"></a>
+
+                <h2>Reserva</h2>
+                <p>
+                    Por reservas consulta el calendario la disponibilidad del día y fecha requeridos.
+                    <!-- Contenido de Reserva -->
+                </p>
+
             </div>
-            <div class="carousel-slide">
-                <div class="content-container">
-                    <img src="fotos/3.jpg" alt="Imagen 3">
-                    <div class="text-container">
-                        <figcaption>
-                            4 canchas de tenis
-                        </figcaption>
+            <br><br><br><br><br><br><br><br><br><br>
+
+            <div id="contacto">
+                <h2>Contacto</h2>
+
+                <a name="contacto"></a>
+
+                <form class="miFormulario" action>
+
+                    <div class="campo-div">
+                        <label for="nombre">NOMBRE Y APELLIDO:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido"
+                            required><br><br>
                     </div>
-                </div>
-            </div>
-            <div class="carousel-slide">
-                <div class="content-container">
-                    <img src="fotos/4.jpg" alt="Imagen 4">
-                    <div class="text-container">
-                        <figcaption>
-                            Alquiler de elementos deportivos (Pelotas, Raquetas, etc.)
-                        </figcaption>
+                    <div class="campo-div">
+                        <label for="email">CORREO ELECTRÓNICO:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico"
+                            required><br><br>
                     </div>
-                </div>
-            </div>
-            <div class="carousel-slide">
-                <div class="content-container">
-                    <img src="fotos/5.jpg" alt="Imagen 5">
-                    <div class="text-container">
-                        <figcaption>
-                            3 cancha de futbol 7 y 5 canchas de futbol 5
-                        </figcaption>
+
+                    <div class="campo-div">
+                        <label for="numero">NÚMERO DE TELÉFONO:</label>
+                        <input type="text" id="numero" name="numero" placeholder="Ingrese su numero"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                     </div>
-                </div>
-            </div>
-            <div class="carousel-slide">
-                <div class="content-container">
-                    <img src="fotos/6.jpg" alt="Imagen 6">
-                    <div class="text-container">
-                        <figcaption>
-                            Estacionamiento, Vestuarios, Sector de descanso y buffet con parrila
-                        </figcaption>
+                    <div class="campo-div">
+                        <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..."
+                            required></textarea><br><br>
                     </div>
-                </div>
-            </div>
-            <div class="carousel-slide">
-                <div class="content-container">
-                    <img src="fotos/7.jpg" alt="Imagen 7">
-                    <div class="text-container">
-                        <figcaption>
-                            2 canchas de Voley
-                        </figcaption>
-                    </div>
-                </div>
+                    <div class="submit"></div>
+                    <input type="submit" value="ENVIAR">
+
+                </form>
             </div>
         </div>
-
-
-
-        <br><br><br><br><br><br><br><br><br><br>
-
-        <div id="reserva"></a>
-
-            <h2>Reserva</h2>
-            <p>
-                Por reservas consulta el calendario la disponibilidad del día y fecha requeridos.
-                <!-- Contenido de Reserva -->
-            </p>
-
-        </div>
-        <br><br><br><br><br><br><br><br><br><br>
-
-        <div id="contacto">
-            <h2>Contacto</h2>
-
-            <a name="contacto"></a>
-
-            <form class="miFormulario" action>
-
-                <div class="campo-div">
-                    <label for="nombre">NOMBRE Y APELLIDO:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido"
-                        required><br><br>
-                </div>
-                <div class="campo-div">
-                    <label for="email">CORREO ELECTRÓNICO:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico"
-                        required><br><br>
-                </div>
-
-                <div class="campo-div">
-                    <label for="numero">NÚMERO DE TELÉFONO:</label>
-                    <input type="text" id="numero" name="numero" placeholder="Ingrese su numero"
-                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                </div>
-                <div class="campo-div">
-                    <textarea name="consulta" id="consulta" cols="54" rows="10" placeholder="Dejanos tu consulta..."
-                        required></textarea><br><br>
-                </div>
-                <div class="submit"></div>
-                <input type="submit" value="ENVIAR">
-
-            </form>
-        </div>
+        <br><br><br><br>
+        <div id="comollegar"></div>
+        <p> Dale click para acceder fácil y rápidamente a nuestra a nuestra geolocalización. </p>
+        <h2>Como llegar</h2>
+        <a name="comollegar"></a>
+        <br><br><br><br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26850.66145485692!2d-60.743367362610506!3d-32.730355794617296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spolideportivo%20san%20lorenzo!5e0!3m2!1ses-419!2sar!4v1696775148305!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-   <br><br><br><br>
-    <div id="comollegar"></div>
-    <p> Dale click para acceder fácil y rápidamente a nuestra a nuestra geolocalización. </p>
-    <h2>Como llegar</h2>
-    <a name="comollegar"></a>
-<br><br><br><br>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26850.66145485692!2d-60.743367362610506!3d-32.730355794617296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spolideportivo%20san%20lorenzo!5e0!3m2!1ses-419!2sar!4v1696775148305!5m2!1ses-419!2sar"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </div>
-
-
 </body>
-<DIV>
+<div>
     <footer>
         ©2023 Complejo Fiona
     </footer>
 
-</DIV>
+</div>
 
 </html>

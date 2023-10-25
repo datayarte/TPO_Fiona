@@ -42,6 +42,13 @@ video {
   min-width: 105%;
   min-height: 100%;
   transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -3;
+}
+
+#fondoDePagina {
+  background-color: #999; /* Reemplaza #999 con el color que desees */
+  height: 100%;
+  position: relative;
   z-index: -2;
 }
 
@@ -204,6 +211,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1
 }
 
 .carousel-slide {
