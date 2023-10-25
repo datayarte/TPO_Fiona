@@ -6,11 +6,21 @@ html {
 .container {
   z-index: 100;
   top: 0;
-  left: 0;
-  position: fixed;
+  left: 50;
+  position: relative;
   width: 100%;
   padding: 20px;
   background-color: black;
+  text-align: right;
+  margin-right: 20px
+}
+
+.logo {
+  text-align: left; /* Alinea el título a la izquierda */
+  margin-left: 20px; /* Agrega un margen izquierdo para espaciarlo de los enlaces del menú */
+  font-size: 30px; /* Ajusta el tamaño del título según tus preferencias */
+  color: #93c240; /* Color del texto */
+  font-family: 'Bungee Spice', sans-serif; /* Fuente */
 }
 
 nav {
@@ -46,23 +56,12 @@ video {
 }
 
 #fondoDePagina {
-  background-color: #999; /* Reemplaza #999 con el color que desees */
+  background-color: #082206; /* Reemplaza #999 con el color que desees */
   height: 100%;
   position: relative;
   z-index: -2;
 }
 
-h1 {
-  /*color: rgb(11, 229, 237);*/
-  font-size: 55px;
-  font-family: 'Bungee Spice', sans-serif;  transition: transform 0.3s; /* Agrega una transición de 0.3 segundos a la transformación */
-  text-align: center; /* Alinea el texto al centro */
-  margin: 100px 0;
-}
-
-h1:hover {
-  transform: translateX(10px); /* Mueve el título horizontalmente al pasar el mouse (ajusta la cantidad de desplazamiento según tus preferencias) */
-}
 
 h2 {
   color: rgb(204, 255, 1);
