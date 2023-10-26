@@ -236,13 +236,12 @@ footer {
 
 figcaption {
   flex: 1;
-  text-align: center; /* Alinea el texto al centro */
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo translúcido con 70% de opacidad */
+  text-align: left; /* Alinea el texto al centro */
   padding: 10px; /* Añade espacio alrededor del texto */
   border-radius: 10px; /* Bordes redondeados */
   margin-left: 30px; /* Agrega un margen a la izquierda del envoltorio del texto */
   font-family: 'Exo 2', sans-serif;
-  font-size: 45px;
+  font-size: 25px;
 }
 
 /* ... Otros estilos ... */
