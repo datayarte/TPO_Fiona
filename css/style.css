@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
+  margin-top: 150px; /* Ajusta esta altura según la altura de tu menú */
+  padding: 0px; /* Agrega algún espacio interno si es necesario */
 }
+
 
 /* Estilos para el contenedor y barra de navegación */
 .container {
