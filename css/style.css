@@ -67,40 +67,43 @@ h2 {
   color: rgb(204, 255, 1);
   font-size: 30px;
   font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
-  text-align: left; /* Alinea el texto a la izquierda */
-  background-color: rgba(65, 2, 2, 0.392); /* Color de fondo burdeos con 70% de transparencia */
+  text-align: center; /* Alinea el texto a la izquierda */
   padding: 10px; /* Agrega un espacio alrededor del texto */
   border-radius: 15px; /* Bordes redondeados */
-  display: inline-block; /* Para que el fondo se ajuste al contenido */
-  margin: 10px 0; /* Añade un margen superior e inferior para separar los títulos */
-  text-align: left; /* Alinea el texto a la izquierda */
+  margin: 40px 40px; /* Añade un margen superior e inferior para separar los títulos */
+ 
 }
 
 h3 {
   color: rgb(45, 137, 241);
   font-size: 30px;
   font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
-  text-align: left; /* Alinea el texto a la izquierda */
-  background-color: rgba(65, 2, 2, 0.622); /* Color de fondo burdeos con 70% de transparencia */
+  text-align: center; /* Alinea el texto a la izquierda */
+ 
   padding: 10px; /* Agrega un espacio alrededor del texto */
   border-radius: 15px; /* Bordes redondeados */
-  display: inline-block; /* Para que el fondo se ajuste al contenido */
+
   margin: 10px 0; /* Añade un margen superior e inferior para separar los títulos */
-  text-align: left; /* Alinea el texto a la izquierda */
+ 
 }
 
 h4 {
   color: rgb(204, 255, 1);
   font-size: 30px;
   font-family: 'Kanit', sans-serif; /* Utiliza la fuente Kanit de Google Fonts por defecto */
-  text-align: left; /* Alinea el texto a la izquierda */
-  background-color: rgba(65, 2, 2, 0.474); /* Color de fondo burdeos con 70% de transparencia */
+  text-align: center; /* Alinea el texto a la izquierda */
   padding: 10px; /* Agrega un espacio alrededor del texto */
   border-radius: 15px; /* Bordes redondeados */
-  display: inline-block; /* Para que el fondo se ajuste al contenido */
   margin: 10px 0; /* Añade un margen superior e inferior para separar los títulos */
-  text-align: left; /* Alinea el texto a la izquierda */
 }
+
+h5{
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
+
 
 p {
   color: rgb(231, 132, 96);
@@ -198,11 +201,17 @@ textarea {
 
 /* Estilos para el pie de página */
 footer {
-  background-color: black;
   color: white;
   text-align: center;
-  padding: 10px;
   width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 50;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  margin-right: 20px
 }
 
 /* Estilos para el carrusel y el texto "Quienes somos" */
@@ -215,7 +224,7 @@ footer {
 
 .carousel-slide {
   flex: 1;
-  animation: fade 12s infinite; /* Cambio de imagen con desvanecimiento cada 12 segundos (ajusta según tus preferencias) */
+  animation: fade 6s infinite; /* Cambio de imagen con desvanecimiento cada 12 segundos (ajusta según tus preferencias) */
 }
 
 @keyframes fade {
@@ -344,3 +353,5 @@ iframe {
 .miFormulario {
   text-align: center;
 }
+
+
