@@ -21,21 +21,25 @@
             <h1>Complejo Deportivo FIONA</h1>
         </div>
         <nav>
-            <a href="#">Inicio</a>&nbsp;&nbsp;&nbsp;
-            <a href="#quienesSomos">Quienes somos</a>&nbsp;&nbsp;&nbsp;
-            <a href="#reserva">Reserva</a>&nbsp;&nbsp;&nbsp;
-            <a href="#contacto">Contacto</a>&nbsp;&nbsp;&nbsp;
-            <a href="#comollegar">Cómo llegar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button id="toggleSound"><!-- Iconos de audio encendido y apagado -->
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#quienesSomos">Quienes somos</a></li>
+                <li><a href="#reserva">Reserva</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#comollegar">Cómo llegar</a></li>
+            </ul>
+            
+            <button id="toggleSound">
                 <div class="icon-container">
-                    <img id="musicaOn" src="fotos/musicaon.png" alt="Icono de Sonido Activado">
-                </div>
-                <div class="icon-container">
-                    <img id="musicaOff" src="fotos/musicaoff.png" alt="Icono de Sonido Desactivado">
-                </div>
-            </button>
+                   <img id="musicaOn" src="fotos/musicaon.png" alt="Icono de Sonido Activado">
+               </div>
+               <div class="icon-container">
+                   <img id="musicaOff" src="fotos/musicaoff.png" alt="Icono de Sonido Desactivado">
+               </div> 
+           </button>
         </nav>
     </div>
+    
 
     <video src="video/final.mp4" autoplay muted loop
         poster="fotos/aerea1.png"></video><!-- Enlaza el archivo de video -->
@@ -160,12 +164,12 @@
                     <form class="FormReserva" action>
                         <label for="deporte">Deporte:</label>
                         <select name="deporte" id="deporte">
-                            <option value="futbol5">Fútbol 5</option>
-                            <option value="futbol7">Fútbol 7</option>
-                            <option value="padel_cemento">Pádel (Cemento)</option>
-                            <option value="padel_alfombra">Pádel (Alfombra)</option>
+                            <option value="futbol5">Futbol 5</option>
+                            <option value="futbol7">Futbol 7</option>
+                            <option value="padel_cemento">Padel (Cemento)</option>
+                            <option value="padel_alfombra">Padel (Alfombra)</option>
                             <option value="tenis">Tenis</option>
-                            <option value="voley">Vóley</option>
+                            <option value="voley">Voley</option>
                         </select>
                 
                         <label for="fecha">Fecha:</label>

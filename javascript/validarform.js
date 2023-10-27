@@ -25,4 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const re = /\S+@\S+\.\S+/;
         return re.test(email);
     }
+
+
 });
+

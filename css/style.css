@@ -9,25 +9,40 @@ html {
   left: 50;
   position: fixed;
   width: 100%;
-  padding: 20px;
+  padding: 0px 40px 0px 0px;
   background-color: black;
-  text-align: right;
-  margin-right: 20px
+  display: flex; /* Cambio a display flex */
+  justify-content: space-between; /* Para separar el logo y el menú */
+  align-items: center; /* Para centrar verticalmente */
+  margin-right: 20px;
 }
 
 .logo {
   text-align: left; /* Alinea el título a la izquierda */
   margin-left: 20px; /* Agrega un margen izquierdo para espaciarlo de los enlaces del menú */
-  font-size: 30px; /* Ajusta el tamaño del título según tus preferencias */
+  font-size: 20px; /* Ajusta el tamaño del título según tus preferencias */
   color: #93c240; /* Color del texto */
   font-family: 'Bungee Spice', sans-serif; /* Fuente */
+  margin: 0;
+  padding: 0;
 }
 
 nav {
   color: #fff;
-    text-align: center;
+  text-align: center;
+  text-decoration: none; /* Quita el subrayado de los enlaces */
 }
 
+nav ul {
+  list-style: none;
+  padding: 0px 80px 0px 0px;
+  margin: 0;
+}
+
+nav li {
+  display: inline; /* Para que los elementos del menú estén en línea */
+  margin-right: 10px; /* Espacio entre elementos del menú */
+}
 nav a {
   text-decoration: none;
   color: #fff;
@@ -49,7 +64,7 @@ video {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 105%;
+  min-width: 100%;
   min-height: 100%;
   transform: translateX(calc((100% - 100vw) / 2));
   z-index: -3;
@@ -111,7 +126,7 @@ p {
 }
 
 /* Estilos para el botón de alternar sonido */
-#toggleSound {
+.toggleSound {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -139,7 +154,7 @@ body {
   width: 20px; /* Ajusta el tamaño de los iconos según tus preferencias */
   height: 20px;
   display: block; /* Asegura que ambos iconos se muestren con el mismo tamaño */
-  margin: 0 auto; /* Centra los iconos horizontalmente */
+  margin: 0 auto;  /*Centra los iconos horizontalmente */
 }
 
 #musicaOff {
@@ -151,7 +166,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .section-box {
