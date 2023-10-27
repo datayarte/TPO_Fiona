@@ -30,7 +30,12 @@ html {
   padding: 0;
 }
 
+
+
 nav {
+  display: flex; /* Cambia la disposición de la barra de navegación a flexbox */
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
   text-align: center;
   text-decoration: none; /* Quita el subrayado de los enlaces */
@@ -40,19 +45,16 @@ nav ul {
   list-style: none;
   padding: 0px 80px 0px 0px;
   margin: 0;
+  display: flex; /* Cambia la disposición de la lista de enlaces a flexbox */
 }
 
 nav li {
-  display: inline; /* Para que los elementos del menú estén en línea */
   margin-right: 10px; /* Espacio entre elementos del menú */
 }
+
 nav a {
   text-decoration: none;
   color: #fff;
-  text-align: right;
-  scroll-behavior: smooth; /* Agrega desplazamiento suave a los enlaces del menú */
-  transition: color 0.3s; /* Agrega una transición de 0.3 segundos al cambio de color */
-  transition: transform 0.3s; /* Agrega una transición de 0.3 segundos a la transformación */
   font-family: 'Exo 2', sans-serif;
   font-size: 20px;
 }
@@ -371,5 +373,6 @@ iframe {
 .miFormulario {
   text-align: center;
 }
+
 
 

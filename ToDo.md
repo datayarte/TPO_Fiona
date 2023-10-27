@@ -2,8 +2,9 @@
 
 ## Nuestro listado de tareas pendientes
 
-- [ ] emprolijar menu: texto del complejo y menu en una misma linea
+- [X] emprolijar menu: texto del complejo y menu en una misma linea
 - [ ] todo se vea por debajo del menu. 
+        Quedó a medias
 - [ ] Carrousel: achicar imagen y agregar contenido
 - [ ] ver que todo sea Responsive
 - [ ] Video: que el video no ocupe toda la web sino que solo hasta quienes somos
