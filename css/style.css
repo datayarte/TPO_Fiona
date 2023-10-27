@@ -7,7 +7,7 @@ html {
   z-index: 100;
   top: 0;
   left: 50;
-  position: relative;
+  position: fixed;
   width: 100%;
   padding: 20px;
   background-color: black;
@@ -59,7 +59,7 @@ video {
   background-color: #082206; /* Reemplaza #999 con el color que desees */
   height: 100%;
   position: relative;
-  z-index: -2;
+  /*z-index: -2;*/ 
 }
 
 

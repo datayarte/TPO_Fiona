@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const formulario = document.getElementById("miFormulario");
+    const formulario = document.getElementById("FormContacto");
 
     formulario.addEventListener("submit", function (event) {
         const nombre = document.getElementById("nombre").value;

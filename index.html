@@ -156,6 +156,33 @@
                 <h5>
                     Por reservas consulta el calendario la disponibilidad del día y fecha requeridos.
                     <!-- Contenido de Reserva -->
+
+                    <form class="FormReserva" action>
+                        <label for="deporte">Deporte:</label>
+                        <select name="deporte" id="deporte">
+                            <option value="futbol5">Fútbol 5</option>
+                            <option value="futbol7">Fútbol 7</option>
+                            <option value="padel_cemento">Pádel (Cemento)</option>
+                            <option value="padel_alfombra">Pádel (Alfombra)</option>
+                            <option value="tenis">Tenis</option>
+                            <option value="voley">Vóley</option>
+                        </select>
+                
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" name="fecha" id="fecha" required>
+                
+                        <label for="hora">Hora:</label>
+                        <input type="time" name="hora" id="hora" required>
+                
+                        <label for="duracion">Duración:</label>
+                        <select name="duracion" id="duracion">
+                            <option value="1">1 hora</option>
+                            <option value="1.5">1 hora 30 minutos</option>
+                            <option value="2">2 horas</option>
+                        </select>
+                
+                        <input type="submit" value="Reservar">
+                    </form>
                 </h5>
 
             </div>
@@ -166,7 +193,7 @@
 
                 <a name="contacto"></a>
 
-                <form class="miFormulario" action>
+                <form class="FormContacto" action>
 
                     <div class="campo-div">
                         <label for="nombre">NOMBRE Y APELLIDO:</label>
