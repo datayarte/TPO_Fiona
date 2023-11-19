@@ -2,6 +2,7 @@
 ## Fecha de entrega:  20/11
 
 ### Nuestro listado de tareas pendientes
+Releer el pdf de los requerimientos 
 
 - [ ] distribuir mejor los elementos.
 - [ ] no hace falta imagenes de fondo (algo sencillo).
