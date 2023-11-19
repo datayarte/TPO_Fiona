@@ -3,12 +3,12 @@
 
 ### Nuestro listado de tareas pendientes
 
-- [ ] distribuir mejor los elementos
-- [ ] no hace falta imagenes de fondo (algo sencillo)
+- [ ] distribuir mejor los elementos.
+- [ ] no hace falta imagenes de fondo (algo sencillo).
 - [ ] Usar el mismo color de la letra del titulo para el resto
-- [ ] usar etiquetas semánticas para separar las secciones
-- [ ] Ordenar los inputs de la reserva (similar al formulario)
-- [ ] Poner un poco mas de texto
+- [ ] usar etiquetas semánticas para separar las secciones.
+- [ ] Ordenar los inputs de la reserva (similar al formulario).
+- [ ] Poner un poco mas de texto.
 
 **RECUERDEN**
 
