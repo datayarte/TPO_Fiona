@@ -1,17 +1,14 @@
-# To Do List 
+# To Do List al 18/11
+## Fecha de entrega:  20/11
 
-## Nuestro listado de tareas pendientes
+### Nuestro listado de tareas pendientes
 
-- [X] emprolijar menu: texto del complejo y menu en una misma linea
-- [ ] todo se vea por debajo del menu. 
-        Quedó a medias
-- [ ] Carrousel: achicar imagen y agregar contenido
-- [ ] ver que todo sea Responsive
-- [ ] Video: que el video no ocupe toda la web sino que solo hasta quienes somos
-
-
-
-
+- [ ] distribuir mejor los elementos
+- [ ] no hace falta imagenes de fondo (algo sencillo)
+- [ ] Usar el mismo color de la letra del titulo para el resto
+- [ ] usar etiquetas semánticas para separar las secciones
+- [ ] Ordenar los inputs de la reserva (similar al formulario)
+- [ ] Poner un poco mas de texto
 
 **RECUERDEN**
 
