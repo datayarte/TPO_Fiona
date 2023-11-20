@@ -9,7 +9,7 @@ Releer el pdf de los requerimientos
 - [X] Usar el mismo color de la letra del titulo para el resto
 - [ ] usar etiquetas semánticas para separar las secciones.
 - [X] Ordenar los inputs de la reserva (similar al formulario).
-- [ ] Poner un poco mas de texto.
+- [X] Poner un poco mas de texto.
 
 **RECUERDEN**
 

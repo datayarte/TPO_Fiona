@@ -171,6 +171,14 @@ body {
   border-radius: 10px; /* Bordes redondeados */
 }
 
+section {
+  display: none;
+}
+
+section:target {
+  display: block;
+}
+
 
 /* Estilos para contenedores de secciones y cajas de sección */
 .section-container {
@@ -246,12 +254,20 @@ footer {
   margin-right: 20px
 }
 
+#quienesSomos {
+  margin-left: 20px; /* Espacio a la izquierda */
+  margin-right: 20px; /* Espacio a la derecha */
+  justify-content: left; /* Centra horizontalmente */
+  align-items: left;
+}
 /* Estilos para el carrusel y el texto "Quienes somos" */
+
 .carousel-container {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center; /* Centra horizontalmente */
   z-index: 1
+  margin-bottom: 10px;
 }
 
 .carousel-slide {
@@ -288,7 +304,9 @@ footer {
   flex-direction: row; /* Alinea la imagen y el texto en una fila */
   align-items: center;
   justify-content: center; /* Centra horizontalmente */
-  height: 100vh; /* O ajusta la altura según sea necesario */
+  height: 60vh; /* O ajusta la altura según sea necesario */
+  overflow: hidden; 
+  width: 100%;
 }
 
 .content-container img {
@@ -298,6 +316,7 @@ footer {
 
 figcaption {
   flex: 1;
+  margin-top: 10px;
   text-align: center; /* Alinea el texto al centro */
   padding: 10px; /* Añade espacio alrededor del texto */
   border-radius: 10px; /* Bordes redondeados */
@@ -319,24 +338,12 @@ iframe {
   text-align: left;
 }
 .FormReserva {
-  width: 50%; /* Ancho del formulario (ajusta según sea necesario) */
+  width: 10%; /* Ancho del formulario (ajusta según sea necesario) */
   margin: 0 auto; /* Centra horizontalmente el formulario */
   text-align: left; /* Alinea el texto a la izquierda dentro del formulario */
 }
 
-/* Alinea los elementos hijos del formulario (inputs, labels, etc.) a la izquierda */
-.FormReserva * {
-  text-align: left;
-}
 
-/* Centra verticalmente el contenido del formulario */
-.FormReserva {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 
 
