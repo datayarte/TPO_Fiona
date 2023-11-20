@@ -2,11 +2,14 @@ html {
   scroll-behavior: smooth;
   margin-top: 150px; /* Ajusta esta altura según la altura de tu menú */
   padding: 0px; /* Agrega algún espacio interno si es necesario */
+  
+  
 }
 
 
 /* Estilos para el contenedor y barra de navegación */
 .container {
+  
   z-index: 100;
   top: 0;
   left: 50;
@@ -56,18 +59,20 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(204, 255, 1);
   font-family: 'Exo 2', sans-serif;
   font-size: 20px;
+  
+  
 }
 
 nav a:hover {
-  color: #1e8ef0; /* Cambia el color al pasar el mouse (ajusta el color según tus preferencias) */
+  color: rgb(2, 47, 2);
   transform: translateX(6px); /* Mueve el título Horizontalmente al pasar el mouse (ajusta la cantidad de desplazamiento según tus preferencias) */
 }
 
 /* Estilos para el video de fondo */
-video {
+/* video {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -75,7 +80,7 @@ video {
   min-height: 100%;
   transform: translateX(calc((100% - 100vw) / 2));
   z-index: -3;
-}
+} */
 
 #fondoDePagina {
   background-color: #082206; /* Reemplaza #999 con el color que desees */
@@ -120,9 +125,11 @@ h4 {
 }
 
 h5{
-  color: white;
+  /*color: white;*/
   font-size: large;
   text-align: center;
+  color: rgb(100, 241, 119);
+  
 }
 
 
@@ -141,7 +148,7 @@ p {
 
 /* Estilos para el cuerpo de la página */
 body {
-  background-color: rgb(3, 158, 3); /* Cambia el color de fondo a verde pasto o el que prefieras */
+  background-color: rgb(2, 47, 2); /* Cambia el color de fondo a verde pasto o el que prefieras */
   margin: 0; /* Asegura que no haya margen en el cuerpo */
   color: rgb(100, 241, 119);
   font-family: 'Open Sans', sans-serif; 
@@ -156,17 +163,6 @@ body {
   border-radius: 10px; /* Bordes redondeados */
 }
 
-#musicaOn,
-#musicaOff {
-  width: 20px; /* Ajusta el tamaño de los iconos según tus preferencias */
-  height: 20px;
-  display: block; /* Asegura que ambos iconos se muestren con el mismo tamaño */
-  margin: 0 auto;  /*Centra los iconos horizontalmente */
-}
-
-#musicaOff {
-  display: none; /* Oculta el icono de sonido desactivado al principio */
-}
 
 /* Estilos para contenedores de secciones y cajas de sección */
 .section-container {
@@ -202,6 +198,7 @@ label {
   display: inline-block;
   width: 150px;
   text-align: left;
+  color: rgb(100, 241, 119);
 }
 
 input {
@@ -249,10 +246,6 @@ footer {
   animation: fade 6s infinite; /* Cambio de imagen con desvanecimiento cada 12 segundos (ajusta según tus preferencias) */
 }
 
-@keyframes fade {
-  0%, 100% { opacity: 0; }
-  10%, 90% { opacity: 1; }
-}
 
 .content-container {
   display: flex;
@@ -267,7 +260,7 @@ footer {
 
 figcaption {
   flex: 1;
-  text-align: left; /* Alinea el texto al centro */
+  text-align: center; /* Alinea el texto al centro */
   padding: 10px; /* Añade espacio alrededor del texto */
   border-radius: 10px; /* Bordes redondeados */
   margin-left: 30px; /* Agrega un margen a la izquierda del envoltorio del texto */
@@ -277,95 +270,7 @@ figcaption {
 
 /* ... Otros estilos ... */
 
-/* Estilos para el contenedor de voley y elementos */
-.voley {
-  width: 600px;
-  height: 400px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(3, 86, 158, 0.683);
-}
 
-.element {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-}
-
-#jugador1 {
-  animation: movePlayer1 8s linear infinite;
-  left: 0;
-  top: 0;
-}
-
-#jugador2 {
-  animation: movePlayer2 7s linear infinite;
-  left: 0;
-  top: 0;
-}
-
-#pelota {
-  animation: moveBall 4s linear infinite;
-  left: 0;
-  top: 60px;
-  transform: translate(0, -50%);
-}
-
-#red {
-  animation: moveNet 3s linear infinite;
-  left: 295px;
-  top: 15%;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes movePlayer1 {
-  0% {
-    left: -90px; /* Posición inicial fuera del contenedor */
-  }
-  50% {
-    left: 140px; /* Mueve al centro */
-  }
-  100% {
-    left: -90px; /* Vuelve a la posición inicial */
-  }
-}
-
-@keyframes movePlayer2 {
-  0% {
-    left: 450px; /* Posición inicial fuera del contenedor */
-  }
-  50% {
-    left: 250px; /* Mueve al centro */
-  }
-  100% {
-    left: 450px; /* Vuelve a la posición inicial */
-  }
-}
-
-@keyframes moveBall {
-  0% {
-    left: 255px; /* Posición inicial fuera del contenedor */
-  }
-  50% {
-    left: 330px; /* Llega al centro y se detiene */
-  }
-  100% {
-    left: 255px; /* Llega al centro y se detiene */
-  }
-}
-
-@keyframes moveNet {
-  0% {
-    left: 240px; /* Posición inicial centrada horizontalmente */
-  }
-  50% {
-    left: 270px; /* Se mueve 10px a la derecha */
-  }
-  100% {
-    left: 240px; /* Vuelve al centro */
-  }
-}
 
 iframe {
   margin: 0 auto; 
@@ -373,7 +278,10 @@ iframe {
 }
 
 .miFormulario {
-  text-align: center;
+  text-align: left;
+}
+FormReserva{
+  text-align: left;
 }
 
 

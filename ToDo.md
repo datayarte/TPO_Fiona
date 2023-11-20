@@ -4,11 +4,11 @@
 ### Nuestro listado de tareas pendientes
 Releer el pdf de los requerimientos 
 
-- [ ] distribuir mejor los elementos.
-- [ ] no hace falta imagenes de fondo (algo sencillo).
-- [ ] Usar el mismo color de la letra del titulo para el resto
+- [X] distribuir mejor los elementos.
+- [X] no hace falta imagenes de fondo (algo sencillo).
+- [X] Usar el mismo color de la letra del titulo para el resto
 - [ ] usar etiquetas semánticas para separar las secciones.
-- [ ] Ordenar los inputs de la reserva (similar al formulario).
+- [X] Ordenar los inputs de la reserva (similar al formulario).
 - [ ] Poner un poco mas de texto.
 
 **RECUERDEN**

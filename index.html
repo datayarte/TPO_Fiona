@@ -9,7 +9,7 @@
     <link rel="icon" href="fotos/logo.png" type="image/png"><!-- Logo en la pestaña -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Enlaza a las fuentes de Google -->
-    <script src="javascript/sonido.js" defer></script> <!-- Enlaza el archivo JavaScript -->
+    <script src="javascript/carousel.js" defer></script> <!-- Enlaza el archivo JavaScript -->
     <script src="javascript/validarform.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll-polyfill/0.4.4/smoothscroll.min.js"></script>
 </head>
@@ -29,41 +29,21 @@
                 <li><a href="#comollegar">Cómo llegar</a></li>
             </ul>
             
-            <button id="toggleSound">
+            <!-- <button id="toggleSound">
                 <div class="icon-container">
                    <img id="musicaOn" src="fotos/musicaon.png" alt="Icono de Sonido Activado">
                </div>
                <div class="icon-container">
                    <img id="musicaOff" src="fotos/musicaoff.png" alt="Icono de Sonido Desactivado">
                </div> 
-           </button>
+           </button> -->
            
         </nav>
     </div>
     
 
-    <video src="video/final.mp4" autoplay muted loop
-        poster="fotos/aerea1.png"></video><!-- Enlaza el archivo de video -->
-    <div id="fondoDePagina">
 
-    </div>
-
-    <div class="voley">
-        <div class="element player" id="jugador1">
-            <img src="fotos/pic1.png" alt="Jugador 1">
-        </div>
-        <div class="element player" id="jugador2">
-            <img src="fotos/pic2.png" alt="Jugador 2">
-        </div>
-        <div class="element ball" id="pelota">
-            <img src="fotos/pic3.png" alt="Pelota">
-        </div>
-        <div class="element net" id="red">
-            <img src="fotos/pic4.png" alt="Red">
-        </div>
-    </div>
-
-    <div id="fondoDePagina">
+    <!-- <div id="fondoDePagina">-->
 
         <div id="quienesSomos">
             <h2>Quienes somos</h2>
@@ -76,6 +56,15 @@
                 familia, encuentren en él un espacio para llevarlo a cabo y a su vez sentirlo como propio.
             </h5>
             <h4>Nuestras instalaciones cuentan con</h4>
+            <ul> 
+                <li>2 Canchas de Paddle con acrílico y techadas</li>
+                <li> 2 Canchas de Paddle de cemento</li>
+                <li>  4 canchas de tenis</li>
+                <li> Alquiler de elementos deportivos (Pelotas, Raquetas, etc.)</li>
+                <li>  3 canchas de fútbol 7 y 5 canchas de fútbol 5</li>
+                <li> Estacionamiento, Vestuarios, Sector de descanso y buffet con parrila</li>
+                <li> 2 canchas de Voley</li>
+            </ul>
 
 
             <div class="carousel-container">
@@ -84,7 +73,7 @@
                         <img src="fotos/1.jpg" alt="Imagen 1">
                         <div class="text-container">
                             <figcaption>
-                                <h5>2 Canchas de Paddle con acrílico y techadas</h5>
+                               <!--  <h5>2 Canchas de Paddle con acrílico y techadas</h5> -->
                             </figcaption>
                         </div>
                     </div>
@@ -94,7 +83,7 @@
                         <img src="fotos/2.jpg" alt="Imagen 2">
                         <div class="text-container">
                             <figcaption>
-                                2 Canchas de Paddle de cemento
+                               <!--  2 Canchas de Paddle de cemento -->
                             </figcaption>
                         </div>
                     </div>
@@ -104,7 +93,7 @@
                         <img src="fotos/3.jpg" alt="Imagen 3">
                         <div class="text-container">
                             <figcaption>
-                                4 canchas de tenis
+                               <!--  4 canchas de tenis -->
                             </figcaption>
                         </div>
                     </div>
@@ -114,7 +103,7 @@
                         <img src="fotos/4.jpg" alt="Imagen 4">
                         <div class="text-container">
                             <figcaption>
-                                Alquiler de elementos deportivos (Pelotas, Raquetas, etc.)
+                               <!--  Alquiler de elementos deportivos (Pelotas, Raquetas, etc.) -->
                             </figcaption>
                         </div>
                     </div>
@@ -124,7 +113,7 @@
                         <img src="fotos/5.jpg" alt="Imagen 5">
                         <div class="text-container">
                             <figcaption>
-                                3 canchas de fútbol 7 y 5 canchas de fútbol 5
+                               <!--  3 canchas de fútbol 7 y 5 canchas de fútbol 5 -->
                             </figcaption>
                         </div>
                     </div>
@@ -134,7 +123,7 @@
                         <img src="fotos/6.jpg" alt="Imagen 6">
                         <div class="text-container">
                             <figcaption>
-                                Estacionamiento, Vestuarios, Sector de descanso y buffet con parrila
+                                <!-- Estacionamiento, Vestuarios, Sector de descanso y buffet con parrila -->
                             </figcaption>
                         </div>
                     </div>
@@ -144,7 +133,7 @@
                         <img src="fotos/7.jpg" alt="Imagen 7">
                         <div class="text-container">
                             <figcaption>
-                                2 canchas de Voley
+                                <!-- 2 canchas de Voley -->
                             </figcaption>
                         </div>
                     </div>
@@ -161,32 +150,38 @@
                 <h5>
                     Por reservas consulta el calendario la disponibilidad del día y fecha requeridos.
                     <!-- Contenido de Reserva -->
+              
 
                     <form class="FormReserva" action>
-                        <label for="deporte">Deporte:</label>
-                        <select name="deporte" id="deporte">
-                            <option value="futbol5">Futbol 5</option>
-                            <option value="futbol7">Futbol 7</option>
-                            <option value="padel_cemento">Padel (Cemento)</option>
-                            <option value="padel_alfombra">Padel (Alfombra)</option>
-                            <option value="tenis">Tenis</option>
-                            <option value="voley">Voley</option>
-                        </select>
-                
-                        <label for="fecha">Fecha:</label>
-                        <input type="date" name="fecha" id="fecha" required>
-                
-                        <label for="hora">Hora:</label>
-                        <input type="time" name="hora" id="hora" required>
-                
-                        <label for="duracion">Duración:</label>
-                        <select name="duracion" id="duracion">
-                            <option value="1">1 hora</option>
-                            <option value="1.5">1 hora 30 minutos</option>
-                            <option value="2">2 horas</option>
-                        </select>
-                
-                        <input type="submit" value="Reservar">
+                        <div class="campo-div">
+                            <label for="deporte">DEPORTE:</label>
+                            <select name="deporte" id="deporte">
+                                <option value="futbol5">Futbol 5</option>
+                                <option value="futbol7">Futbol 7</option>
+                                <option value="padel_cemento">Padel (Cemento)</option>
+                                <option value="padel_alfombra">Padel (Alfombra)</option>
+                                <option value="tenis">Tenis</option>
+                                <option value="voley">Voley</option>
+                            </select>
+                        </div>
+                        <div class="campo-div">
+                            <label for="fecha">FECHA:</label>
+                            <input type="date" name="fecha" id="fecha" required>
+                        </div>
+                        <div class="campo-div">
+                            <label for="hora">HORA:</label>
+                            <input type="time" name="hora" id="hora" required>
+                        </div>
+                        <div class="campo-div">
+                            <label for="duracion">DURACIÓN:</label>
+                            <select name="duracion" id="duracion">
+                                <option value="1">1 hora</option>
+                                <option value="1.5">1 hora 30 minutos</option>
+                                <option value="2">2 horas</option>
+                            </select>
+                        </div>
+                        <div class="submit"></div>
+                        <input type="submit" value="RESERVAR">
                     </form>
                 </h5>
 
@@ -235,7 +230,7 @@
 
     </div>
 
-    </div>
+    <!-- </div> -->
 </body>
 <div>
     <footer>
